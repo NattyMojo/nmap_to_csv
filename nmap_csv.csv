@@ -1,3 +1,8 @@
-80,tcp,open,
-443,tcp,open,
-80,tcp,open,Actiontec MI424WR-GEN3I WAP
+22,tcp,open,,,
+80,tcp,open,,,
+443,tcp,open,,,
+443,tcp,open,iPXE 1.0.0+,,
+443,tcp,open,Tomato 1.28 (Linux 2.4.20),,
+443,tcp,open,Tomato firmware (Linux 2.6.22),,
+443,tcp,open,Sony Ericsson U8i Vivaz mobile phone,,
+80,tcp,,,11,132.178.227.8
