@@ -24,7 +24,6 @@ for line in f:
             csv_file.write("\n{},{},{},,,".format(brokenLine[brokenLine.index("portid=")+1],brokenLine[brokenLine.index("protocol=")+1],brokenLine[brokenLine.index("state=")+1]))
         except:
             pass
-        #print("{},{},{},,,".format(brokenLine[3],brokenLine[1],brokenLine[5])) 
     elif "<os>" in line:
         try:
             port = brokenLine[brokenLine.index("portid=")+1]
@@ -37,7 +36,6 @@ for line in f:
             csv_file.write("\n{},{},{},{},,".format(port, protocol, status, brokenLine[brokenLine.index("name=")+1]))
         except:
             pass
-        #print("{},{},{},{},,".format(port, protocol, status, brokenLine[1]))
     elif "<trace" in line:
         try:
             np=brokenLine[brokenLine.index("port=")+1]
@@ -49,7 +47,6 @@ for line in f:
             csv_file.write("\n{},{},,,{},{}".format(np, pro, brokenLine[brokenLine.index("ttl=")+1], brokenLine[brokenLine.index("ipaddr=")+1]))
         except:
             pass
-        #print("{},{},,,{},{}".format(np, pro, brokenLine[1], brokenLine[3]))
 
 #Close open files
 f.close()
